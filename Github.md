@@ -40,10 +40,54 @@ cd git_test   #이동
 git init   #local repo 생성
 touch README.md   #README.md파일 생성
 git add README.md   #working->staging
-git commit -m "README.md"   #staging->repository
-git push origin main   #github repo push
+git commit -m "README.md"   #staging->local repo
+
+#github에서 repo생성 후 3개 입력
+git remote add origin https://github.com/주소 #github repo 와 지정되어있는  local repo (.git) 연결하는 명령어
+git branch -M main
+git push -u origin main #local repo->github repo
+
+#앞으로 계속 추가할 때
+git add 파일명
+git commit -m "파일명"
+git push origin main
 ```
+
 ```bash
 #github repo -> local repo
 
-git clone https://~ #github repo pull
+#github에서 repo생성 후
+git clone 주소
+```
+
+*생길 수 있는 변수들*
+
+1. git init를 desktop에 생성해버렸다.
+   
+        rm -rf .git
+
+2. 변경한 내용을 알고 싶을 때
+
+        git diff 파일명
+
+3. 상태를 돌리고 싶을 때 (working dir<-add<-commit)
+
+        git restore --staged 파일명
+
+4. 현재 상태를 알고 싶을 때
+
+        git status
+
+5. 기록을 확인하고 싶을 때
+
+        git log
+
+6. github repo (업데이트된)자료를 local repo로 가져오고 싶을 때 
+
+        git pull
+
+7. 연결 확인 (local 과 github)
+
+        git remote -v
+
+
