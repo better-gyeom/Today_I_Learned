@@ -33,11 +33,17 @@
 *저장소에 파일 올리는 법*
 
 ```bash
+#local repo -> github repo
+
 mkdir git_test   #폴더 추가
 cd git_test   #이동
-git init   #repository생성
+git init   #local repo 생성
 touch README.md   #README.md파일 생성
 git add README.md   #working->staging
 git commit -m "README.md"   #staging->repository
-git push origin main   #push
+git push origin main   #github repo push
 ```
+```bash
+#github repo -> local repo
+
+git clone https://~ #github repo pull
