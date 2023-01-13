@@ -49,7 +49,7 @@ git push -u origin main #local repo->github repo
 
 #앞으로 계속 추가할 때
 git add 파일명
-git commit -m "파일명"
+git commit -m "message"
 git push origin main
 ```
 
