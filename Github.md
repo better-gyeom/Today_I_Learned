@@ -70,7 +70,7 @@ git clone 주소
 
         git diff 파일명
 
-3. 상태를 돌리고 싶을 때 (working dir<-add<-commit)
+3. 상태를 돌리고 싶을 때 (unstaging)
 
         git restore --staged 파일명
 
@@ -90,4 +90,12 @@ git clone 주소
 
         git remote -v
 
+8. commit message 수정
 
+        git commit --amend
+
+9. 정보가 필요할 때
+    
+        git [명령어] --help
+
+10. 
