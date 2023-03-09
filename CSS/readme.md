@@ -97,7 +97,7 @@
     - none: 기본값
     - left: 요소를 왼쪽으로 띄움
     - right: 요소를 오른쪽으로 띄움
-  - 최근엔 `flexbox` , `grid` 등장과 함께 사용도가 낮아짐
+  - 최근엔 `flexbox` , `grid` 등장으로 사용도가 낮아짐
   - Normal flow에서 벗어난 레이아웃을 구성할 때 활용
 
 ### Flexbox  `중요해서 따로 뺌!`
@@ -118,16 +118,34 @@
   - 아이템이 쌓이는 방향이 메인
 - 속성
   - `배치 설정`
-  1. flex-direction : row, column, -reverse
-  2. flex-wrap : wrap, nowrap (컨테이너를 벗어나면 어떻게 배치할건지 ?)
+  1. flex-direction
+     - row
+     - column
+     - -reverse
+  2. flex-wrap (컨테이너를 벗어나면 어떻게 배치할건지 ?)
+     - wrap
+     - nowrap 
   - `공간 나누기`
   1. justify-content (main axis 기준)
        - flex-start/end  
        - center
        - space-between/around/evenly
-  2. align-content (cross axis 기준)
+   2. align-content (cross axis 기준)
+       - flex-start/end
+       - center
+       - space-between/around/evenly
   - `정렬`
-    - align-items (cross axis 기준)
-    - align-self (개별 아이템)
-
+   1. align-items (cross axis 기준)
+      - stretch
+      - flex-start/end
+      - center
+      - baseline
+   2. align-self (개별 아이템)
+      - stretch
+      - flex-start/end
+      - center
+      - baseline
+  - `기타속성`
+  1. flex-grow : 남은 영역을 아이템에 분배
+  2. order : 배치 순서
   
