@@ -53,9 +53,14 @@
     - 줄바꿈이 일어나는 요소
     - 블록 요소 안에 인라인 요소가 들어갈 수 있다.
     - ex_ span / a / img / input, label / b, em, i, strong ...
+  - inline-block
+    - inline이 할 수 없었던 margin, width 등의 속성 값을 적용시킬 수 있게 만들어주는 속성
+
 - 속성에 따른 수평 정렬
     ```
     ```
+
+
 - 
     `display: none`
     - 해당 요소를 화면에 표시하지 않고, 공간조차 부여되지 않는다.
@@ -82,3 +87,47 @@
     - 스크롤 시에도 항상 같은 곳에 위치함
 - `sticky` : 스크롤에 따라 static -> fixed 로 변경
   - 스크롤 위치가 임계점에 이르면 position : fixed 와 같이 박스를 화면에 고정할 수 있는 속성
+  
+### CSS layout
+
+- Float
+  - 박스를 왼쪽 혹은 오른쪽으로 이동시켜 텍스트를 포함, 인라인 요소들이 주변을 wrapping 하도록 하는 것
+  - 요소가 Normal flow를 벗어나도록 함
+  - 속성
+    - none: 기본값
+    - left: 요소를 왼쪽으로 띄움
+    - right: 요소를 오른쪽으로 띄움
+  - 최근엔 `flexbox` , `grid` 등장과 함께 사용도가 낮아짐
+  - Normal flow에서 벗어난 레이아웃을 구성할 때 활용
+
+### Flexbox  `중요해서 따로 뺌!`
+
+- 수동 값 부여 없이
+  1. 수직정렬
+  2. 아이템의 너비와 높이 혹은 간격을 동일하게 배치 하고 싶다!
+- 행과 열 형태로 아이템들을 배치하는 1차원 레이아웃 모델
+- 축
+  - main axis(메인 축)
+  - cross axis(교차 축)
+    ![](image.png)
+- 구성요소
+  - flex container(부모 요소)
+    - display : flex 혹은 inline-flex 로 지정
+  - flex item(자식 요소) 
+- flex-direction : row
+  - 아이템이 쌓이는 방향이 메인
+- 속성
+  - `배치 설정`
+  1. flex-direction : row, column, -reverse
+  2. flex-wrap : wrap, nowrap (컨테이너를 벗어나면 어떻게 배치할건지 ?)
+  - `공간 나누기`
+  1. justify-content (main axis 기준)
+       - flex-start/end  
+       - center
+       - space-between/around/evenly
+  2. align-content (cross axis 기준)
+  - `정렬`
+    - align-items (cross axis 기준)
+    - align-self (개별 아이템)
+
+  
