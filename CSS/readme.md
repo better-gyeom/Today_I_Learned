@@ -106,17 +106,17 @@
   1. 수직정렬
   2. 아이템의 너비와 높이 혹은 간격을 동일하게 배치 하고 싶다!
 - 행과 열 형태로 아이템들을 배치하는 1차원 레이아웃 모델
-- 축
+- **축**
   - main axis(메인 축)
   - cross axis(교차 축)
     ![](image.png)
-- 구성요소
+- **구성요소**
   - flex container(부모 요소)
     - display : flex 혹은 inline-flex 로 지정
   - flex item(자식 요소) 
 - flex-direction : row
   - 아이템이 쌓이는 방향이 메인
-- 속성
+- **속성**
   - `배치 설정`
   1. flex-direction
      - row
