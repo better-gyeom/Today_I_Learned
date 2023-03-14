@@ -29,6 +29,6 @@
 2. 앱 생성
    1.  `python manage.py startapp <name>`
    2.  앱 이름은 복수형으로 작성하는 것을 권장
-3. [아묻따] settings.py -> installed_apps에 <name> 문자열 형태로 저장
+3. [아묻따] settings.py -> installed_apps에 앱 이름을 문자열 형태로 저장
    1. `,`(쉼표) 까먹지 말기
    2. articles 오타 조심하기
